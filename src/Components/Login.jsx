@@ -22,6 +22,9 @@ function Login() {
           setuser(res.data.user)
           alert("Logged in Successfully")
         }
+        else{
+          alert("Invalid Credentials")
+        }
       } catch (error) {
 
       }
