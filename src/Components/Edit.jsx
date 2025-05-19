@@ -20,14 +20,14 @@ function Edit() {
       updatedAt: ""
     },
     onSubmit: async (values) => {
-      await axios.put(`https://blogsite-backend-cjvr.onrender.com/blogs/${params.id}`, values, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
+      await axios.put(`https://blogsite-backend-a5c2.onrender.com/blogs/${params.id}`, values, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
       navigate('/')
       getdata()
       alert("Blog updated successfully")
     }
   })
   const getvalue = async () => {
-    const res = await axios.get(`https://blogsite-backend-cjvr.onrender.com/blogs/${params.id}`, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
+    const res = await axios.get(`https://blogsite-backend-a5c2.onrender.com/blogs/${params.id}`, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
     formik.setValues(res.data)
   }
   useEffect(() => {

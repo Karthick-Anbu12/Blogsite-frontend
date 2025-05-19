@@ -11,7 +11,7 @@ function Signin() {
     },
     onSubmit:async(values)=>{
       try {
-       const res= axios.post("https://blogsite-backend-cjvr.onrender.com/auth/signup",values)
+       const res= axios.post("https://blogsite-backend-a5c2.onrender.com/auth/signup",values)
        if(res.status==201){
         alert('Register Succesfully')
        }

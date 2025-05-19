@@ -19,7 +19,7 @@ function Add() {
       updatedAt: ""
     },
     onSubmit: (values) => {
-      const res = axios.post("https://blogsite-backend-cjvr.onrender.com/blogs", values, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
+      const res = axios.post("https://blogsite-backend-a5c2.onrender.com/blogs", values, { headers: { Authorization: window.localStorage.getItem("mytoken") } })
       if (res.status == 201) {
         alert("Blog Posted")
         navigate('/')

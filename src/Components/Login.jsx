@@ -14,7 +14,7 @@ function Login() {
     },
     onSubmit: async (values) => {
       try {
-        const res = await axios.post("https://blogsite-backend-cjvr.onrender.com/auth/login", values)
+        const res = await axios.post("https://blogsite-backend-a5c2.onrender.com/auth/login", values)
         if (res.status == 200) {
           window.localStorage.setItem("mytoken", res.data.message)
           navigate('/')
